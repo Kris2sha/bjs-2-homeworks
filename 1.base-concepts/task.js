@@ -7,9 +7,13 @@ function solveEquation(a, b, c) {
     let res = [];
     res.push ((-b + Math.sqrt(D))/(2*a));
     res.push ((-b - Math.sqrt(D))/(2*a));
-    arr ["Квадратные корни"] = res;
+    arr = res;
+    console.log (res);
   } else if (D==0) {
-    arr ["Квадратные корни"] = (-b/(2*a));
+    let result = [];
+    result.push (-b/(2*a));
+    arr=result;
+    console.log (result);
   } else if (D<0){
     console.log ("Нет решений");
   }
